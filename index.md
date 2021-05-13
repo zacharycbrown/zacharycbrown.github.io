@@ -4,7 +4,7 @@ layout: default
 
 # Featured
 
-Empty
+See https://sites.google.com/view/zacharycbrown-ai while this cite is under construction.
 
 # About
 
