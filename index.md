@@ -2,7 +2,7 @@
 layout: default
 ---
 
-![home_diagram](/assets/img/home_diagram.PNG)
+![home_diagram.PNG](/assets/img/home_diagram.PNG)
 
 # Featured
 
