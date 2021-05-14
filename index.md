@@ -2,7 +2,7 @@
 layout: default
 ---
 
-![Home](https://zacharycbrown.github.io/assets/img/home_diagram.png)
+![Home](https://github.com/zacharycbrown/zacharycbrown.github.io/blob/main/assets/img/home_diagram.PNG)
 
 # Featured
 
