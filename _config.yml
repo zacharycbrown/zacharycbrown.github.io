@@ -1,6 +1,11 @@
 title: Zachary C. Brown
 logo: /assets/img/logo.PNG
 description: Zachary is an Machine Learning Researcher and Electrical Engineering PhD Student at Duke University.
+about: /about.md
+featured: /featured.md
+projandpubs: /projects_and_publications.md
+blog: /blog.md
+contact: /contact.md
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-minimal
