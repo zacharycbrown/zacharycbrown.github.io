@@ -20,21 +20,21 @@ Nathaniel Robinson, Zachary Brown, Timothy Sitze, and Nancy Fulda.
 Proceedings of the IEEE 19th World Symposium on Applied Machine Intelligence and Informatics, January 2021. 
 [Full Paper](https://dragn.ai/wp-content/uploads/2021/01/sami2021_46_Nathaniel-Robinson.pdf) | [BibTex](https://docs.google.com/document/d/1PzGHcEoWs5wWIXUHN4YDkC_wh-XK8VCXHaq7XiYNFcY/edit?usp=sharing)
 
----
-
+<!-- --- -->
+ 
 _"Towards Neural Programming Interfaces"_
 Zachary Brown, Nathaniel Robinson, David Wingate and Nancy Fulda.
 Advances in Neural Information Processing Systems, December 2020. 
 [Full Paper](https://papers.nips.cc/paper/2020/file/c9f06bc7b46d0247a91c8fc665c13d0e-Paper.pdf) | [BibTex](https://papers.nips.cc/paper/2020/file/c9f06bc7b46d0247a91c8fc665c13d0e-Bibtex.bib)
 
----
+<!-- --- -->
 
 _"BYU-EVE: Mixed Initiative Dialog via Structured Knowledge Graph Traversal and Conversational Scaffolding"_
 Nancy Fulda, Tyler Etchart, William Myers, Daniel Ricks, Zachary Brown, Joseph Szendre, Ben Murdoch, Andrew Carr and David Wingate.
 Amazon Alexa Prize Proceedings, November 2018.
 [Full Paper](https://s3.amazonaws.com/dex-microsites-prod/alexaprize/2018/papers/Eve.pdf) | [BibTex](http://www.slushbot.com/pccl/bibtex/mixed_initiative_dialog.bib)
 
----
+<!-- --- -->
 
 _"Harvesting Common-Sense Navigational Knowledge for Robotics from Uncurated Text Corpora"_
 Nancy Fulda, Nathan Tibbets, Zachary Brown, and David Wingate.
