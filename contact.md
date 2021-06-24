@@ -6,8 +6,8 @@ layout: default
 
 **Email**: zachary.christopher.brown@gmail.com
 
-**LinkedIn**: linkedin.com/in/zacharycbrown
+**LinkedIn**: [linkedin.com/in/zacharycbrown](linkedin.com/in/zacharycbrown)
 
-**Github Repository**: github.com/zacharycbrown
+**Github Repository**: [github.com/zacharycbrown](github.com/zacharycbrown)
 
 [home](./)
