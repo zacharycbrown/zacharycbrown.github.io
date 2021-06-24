@@ -4,6 +4,10 @@ layout: default
 
 ## Contact
 
-_yay_
+**Email**: zachary.christopher.brown@gmail.com
 
-[back](./)
+[LinkedIn](linkedin.com/in/zacharycbrown)
+
+[Github Repository](github.com/zacharycbrown)
+
+[home](./)
