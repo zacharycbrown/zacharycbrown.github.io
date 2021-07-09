@@ -6,7 +6,7 @@ layout: default
 
 ### Resume
 
-[Resume (January 2021)](https://drive.google.com/file/d/1xLhjvq1XuD2GZXJTtEVcyyASo6m3qoWo/view?usp=sharing)
+[Resume (July 2021)](https://drive.google.com/file/d/13tdoYJTd6OIX_HZS3elYWQ-r28JPqsQ9/view?usp=sharing)
 
 ### CV
 
