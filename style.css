@@ -67,6 +67,6 @@ footer {
 
 .section ul li {
     text-align: left;
-    width: 80%; /* Adjust width as needed */
-    max-width: 600px; /* Prevents excessive stretching */
+    width: 10%; /* Adjust width as needed */
+    max-width: 50px; /* Prevents excessive stretching */
 }
