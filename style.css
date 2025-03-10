@@ -61,8 +61,8 @@ footer {
 .section ul {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 0;
+    align-items: left;
+    padding: 10;
 }
 
 .section ul li {
