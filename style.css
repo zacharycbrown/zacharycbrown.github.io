@@ -57,3 +57,10 @@ footer {
     padding: 10px;
     margin-top: 20px;
 }
+
+.section ul {
+    display: inline-block;
+    text-align: left;
+    margin: 0 auto;
+    padding-left: 20px;
+}
