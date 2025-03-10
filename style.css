@@ -59,8 +59,14 @@ footer {
 }
 
 .section ul {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    list-style-position: inside;
+}
+
+.section ul li {
     text-align: left;
-    margin: 0 auto;
-    padding-left: 20px;
+    width: 60%; /* Adjust as needed */
 }
