@@ -59,14 +59,14 @@ footer {
 }
 
 .section ul {
-    display: block;
-    width: fit-content;
-    margin: 0 auto;
-    padding-left: 20px;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
 }
 
 .section ul li {
     text-align: left;
-    width: 60%; /* Adjust as needed */
+    width: 80%; /* Adjust width as needed */
+    max-width: 600px; /* Prevents excessive stretching */
 }
