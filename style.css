@@ -52,16 +52,16 @@ nav ul li a:hover {
 }
 
 .section ul {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    padding: 10;
+    list-style-position: inside; /* Ensures bullets align with text */
+    margin: 0 auto; /* Centers the list itself */
+    padding: 0;
+    width: fit-content; /* Adjusts width to fit content */
+    text-align: left; /* Ensures text stays left-aligned */
 }
 
 .section ul li {
+    display: list-item; /* Ensures proper bullet formatting */
     text-align: left;
-    width: 10%; /* Adjust width as needed */
-    max-width: 50px; /* Prevents excessive stretching */
 }
 
 
