@@ -42,23 +42,19 @@ nav ul li a:hover {
 }
 
 .section {
-    background: white;
-    padding: 40px;
-    margin: 20px auto;
-    width: 80%;
-    max-width: 800px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center; /* Centers the section title and paragraphs */
 }
 
 .section ul {
-    list-style-type: disc; /* Ensures bullet points appear */
-    list-style-position: outside; /* Keeps bullets properly aligned */
-    display: inline-block; /* Allows centering without affecting alignment */
-    text-align: left; /* Ensures list items are left-aligned */
-    padding-left: 20px; /* Moves text slightly right so bullets align */
-    margin: 0 auto; /* Centers the whole list */
+    display: table; /* Treats the list as a block element for centering */
+    margin: 0 auto; /* Centers the list as a whole */
+    padding-left: 0; /* Removes unnecessary left padding */
+    list-style-position: inside; /* Ensures bullets stay with the text */
+}
+
+.section ul li {
+    text-align: left; /* Aligns text to the left within the centered block */
+    padding-left: 10px; /* Slight indent for readability */
 }
 
 
