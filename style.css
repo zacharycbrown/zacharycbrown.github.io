@@ -1,68 +1,92 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-    text-align: center;
+    scroll-behavior: smooth;
+    background-color: #f5f5f5;
 }
 
+/* Header Section */
 header {
-    background: #333;
+    background: linear-gradient(to right, #1a1a1a, #333);
     color: white;
-    padding: 20px;
+    text-align: center;
+    padding: 60px 20px;
+    font-size: 1.5em;
 }
 
-.subtitle {
-    font-size: 1.2em;
-    font-weight: lighter;
+/* Navigation Bar */
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: rgba(51, 51, 51, 0.9);
+    z-index: 1000;
+    padding: 10px 0;
 }
-
 nav ul {
     list-style: none;
+    text-align: center;
     padding: 0;
-    background: #444;
     margin: 0;
-    display: flex;
-    justify-content: center;
 }
-
 nav ul li {
-    margin: 0;
-    padding: 15px 20px;
+    display: inline;
+    margin: 0 15px;
 }
-
 nav ul li a {
     color: white;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
-
 nav ul li a:hover {
+    color: #ffcc00;
     text-decoration: underline;
 }
 
-.list-wrapper {
-    display: inline-block; /* Shrinkwrap the container to its content */
-    text-align: left;      /* Make sure the content (list items) is left-aligned */
-    margin: 0 auto;        /* Center the container itself within its parent */
+/* Section Styles */
+.section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
-/* Optionally, simplify your existing list styles */
-.section ul {
-    list-style-type: disc;      /* Use disc bullets */
-    list-style-position: inside; /* Place bullets inside the content flow */
-    padding-left: 20px;         /* Adjust padding as needed */
-    margin: 0;                  /* Reset margin */
+/* Alternating Background Colors */
+.section:nth-child(even) {
+    background-color: #e8e8e8;
+}
+.section:nth-child(odd) {
+    background-color: #ffffff;
 }
 
-.section ul li {
-    /* Remove any conflicting alignment; they inherit from .list-wrapper */
-    text-align: left;
+/* Add padding to prevent content from being hidden under navbar */
+body {
+    padding-top: 60px;
 }
 
-footer {
-    background: #222;
-    color: white;
-    padding: 10px;
-    margin-top: 20px;
-}
+/* JavaScript for Scroll Animation */
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const sections = document.querySelectorAll(".section");
+    function revealSections() {
+        sections.forEach(section => {
+            const rect = section.getBoundingClientRect();
+            if (rect.top < window.innerHeight * 0.85) {
+                section.classList.add("visible");
+            }
+        });
+    }
+    window.addEventListener("scroll", revealSections);
+    revealSections();
+});
+</script>
