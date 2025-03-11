@@ -49,19 +49,16 @@ nav ul li a:hover {
     max-width: 800px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centers the section title and paragraphs */
 }
 
 .section ul {
-    list-style-position: inside; /* Ensures bullets align with text */
-    margin: 0 auto; /* Centers the list itself */
-    padding: 0;
-    width: fit-content; /* Adjusts width to fit content */
-    text-align: left; /* Ensures text stays left-aligned */
-}
-
-.section ul li {
-    display: list-item; /* Ensures proper bullet formatting */
-    text-align: left;
+    list-style-type: disc; /* Ensures bullet points appear */
+    list-style-position: outside; /* Keeps bullets properly aligned */
+    display: inline-block; /* Allows centering without affecting alignment */
+    text-align: left; /* Ensures list items are left-aligned */
+    padding-left: 20px; /* Moves text slightly right so bullets align */
+    margin: 0 auto; /* Centers the whole list */
 }
 
 
