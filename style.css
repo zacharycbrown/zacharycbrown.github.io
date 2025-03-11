@@ -41,20 +41,17 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-.section {
-    text-align: center; /* Centers the section title and paragraphs */
-}
-
 .section ul {
-    display: table; /* Treats the list as a block element for centering */
-    margin: 0 auto; /* Centers the list as a whole */
-    padding-left: 0; /* Removes unnecessary left padding */
-    list-style-position: inside; /* Ensures bullets stay with the text */
+    list-style-type: disc; /* Ensures bullet points appear */
+    list-style-position: outside; /* Keeps bullets properly aligned */
+    padding-left: 40px; /* Adds proper indentation */
+    margin: 0 auto; /* Centers the list */
+    width: fit-content; /* Ensures the list doesn't span the whole page */
+    text-align: left; /* Ensures text aligns left */
 }
 
 .section ul li {
-    text-align: left; /* Aligns text to the left within the centered block */
-    padding-left: 10px; /* Slight indent for readability */
+    text-align: left; /* Ensures each list item text is aligned left */
 }
 
 
