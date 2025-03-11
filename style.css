@@ -41,18 +41,24 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+.list-wrapper {
+    display: inline-block; /* Shrinkwrap the container to its content */
+    text-align: left;      /* Make sure the content (list items) is left-aligned */
+    margin: 0 auto;        /* Center the container itself within its parent */
+}
+
+/* Optionally, simplify your existing list styles */
 .section ul {
-    display: inline-block;       /* Treat the list as an inline block to center it */
-    margin: 0 auto;              /* Center the list as a whole */
-    padding-left: 40px;          /* Provide space for the bullet */
-    list-style-type: disc;       /* Ensure bullets appear */
-    text-align: left !important; /* Override inherited centering */
+    list-style-type: disc;      /* Use disc bullets */
+    list-style-position: inside; /* Place bullets inside the content flow */
+    padding-left: 20px;         /* Adjust padding as needed */
+    margin: 0;                  /* Reset margin */
 }
 
 .section ul li {
-    text-align: left;            /* Ensure list item text is left aligned */
+    /* Remove any conflicting alignment; they inherit from .list-wrapper */
+    text-align: left;
 }
-
 
 footer {
     background: #222;
