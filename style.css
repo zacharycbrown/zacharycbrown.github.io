@@ -42,16 +42,15 @@ nav ul li a:hover {
 }
 
 .section ul {
-    list-style-type: disc; /* Ensures bullet points appear */
-    list-style-position: outside; /* Keeps bullets properly aligned */
-    padding-left: 40px; /* Adds proper indentation */
-    margin: 0 auto; /* Centers the list */
-    width: fit-content; /* Ensures the list doesn't span the whole page */
-    text-align: left; /* Ensures text aligns left */
+    display: inline-block;       /* Treat the list as an inline block to center it */
+    margin: 0 auto;              /* Center the list as a whole */
+    padding-left: 40px;          /* Provide space for the bullet */
+    list-style-type: disc;       /* Ensure bullets appear */
+    text-align: left !important; /* Override inherited centering */
 }
 
 .section ul li {
-    text-align: left; /* Ensures each list item text is aligned left */
+    text-align: left;            /* Ensure list item text is left aligned */
 }
 
 
