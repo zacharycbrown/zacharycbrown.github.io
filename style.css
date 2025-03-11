@@ -51,13 +51,6 @@ nav ul li a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-footer {
-    background: #222;
-    color: white;
-    padding: 10px;
-    margin-top: 20px;
-}
-
 .section ul {
     display: flex;
     flex-direction: column;
@@ -69,4 +62,12 @@ footer {
     text-align: left;
     width: 10%; /* Adjust width as needed */
     max-width: 50px; /* Prevents excessive stretching */
+}
+
+
+footer {
+    background: #222;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
 }
