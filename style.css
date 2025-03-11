@@ -66,7 +66,7 @@ nav ul li a:hover {
     background-color: #e8e8e8;
 }
 .section:nth-child(odd) {
-    background-color: #ffffff;
+    background-color: #ffcc00;
 }
 
 /* Add padding to prevent content from being hidden under navbar */
