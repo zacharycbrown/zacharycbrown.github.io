@@ -9,7 +9,7 @@ body {
 
 /* Header Section */
 header {
-    background: linear-gradient(to right, #1a1a1a, #333);
+    background: url('https://raw.githubusercontent.com/zacharycbrown/zacharycbrown.github.io/refs/heads/main/images/DALL%C2%B7E%202025-03-11%2017.44.45%20-%20A%20futuristic%20tech%20gradient%20design%20with%20soft%20transitions%20of%20color%2C%20blending%20from%20a%20cool%20grey%20at%20the%20top%20to%20a%20warm%20orange%20at%20the%20bottom.%20The%20gradient%20sh.webp') center/cover no-repeat;/*linear-gradient(to right, #1a1a1a, #333);*/
     color: white;
     text-align: center;
     padding: 60px 20px;
