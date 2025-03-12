@@ -9,7 +9,7 @@ body {
 
 /* Header Section */
 header {
-    background: url('images/dall_e_techno_gradient.jpg') center/cover no-repeat;/*linear-gradient(to right, #1a1a1a, #333);*/
+    background: url('images/dall_e_techno_gradient.webp') center/cover no-repeat;/*linear-gradient(to right, #1a1a1a, #333);*/
     color: grey;
     text-align: center;
     padding: 60px 20px;
