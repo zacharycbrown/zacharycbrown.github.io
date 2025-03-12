@@ -9,8 +9,8 @@ body {
 
 /* Header Section */
 header {
-    background: url('images/DALL%C2%B7E%202025-03-11%2017.42.55%20-%20A%20futuristic%20tech%20gradient%20logo%20with%20smooth%2C%20flowing%20transitions%20from%20grey%20to%20orange.%20The%20design%20should%20incorporate%20a%20modern%2C%20sleek%20emblem%20with%20an%20abs.webp') center/cover no-repeat;/*linear-gradient(to right, #1a1a1a, #333);*/
-    color: white;
+    background: url('images/DALL%C2%B7E%202025-03-11%2017.44.45%20-%20A%20futuristic%20tech%20gradient%20design%20with%20soft%20transitions%20of%20color%2C%20blending%20from%20a%20cool%20grey%20at%20the%20top%20to%20a%20warm%20orange%20at%20the%20bottom.%20The%20gradient%20sh.webp') center/cover no-repeat;/*linear-gradient(to right, #1a1a1a, #333);*/
+    color: black;
     text-align: center;
     padding: 60px 20px;
     font-size: 1.5em;
