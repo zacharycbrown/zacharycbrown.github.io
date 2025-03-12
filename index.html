@@ -144,7 +144,7 @@
         <p>&copy; 2025 Zachary Christopher Brown. All rights reserved.</p>
     </footer>
 
-
+<!-- JavaScript for fading in sections while scrolling -->
 <script>
 document.addEventListener("DOMContentLoaded", function() {
     const sections = document.querySelectorAll(".section");
@@ -159,6 +159,23 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener("scroll", revealSections);
     revealSections();
 });
+</script>
+
+<!-- JavaScript for image carousel -->
+<script>
+    let index = 0;
+    const images = document.querySelectorAll(".carousel-image");
+
+    function showNextImage() {
+        images[index].style.display = "none";
+        index = (index + 1) % images.length;
+        images[index].style.display = "block";
+    }
+
+    setInterval(showNextImage, 3000); // Change image every 3 seconds
+
+    // Initialize: Hide all images except the first one
+    images.forEach((img, i) => img.style.display = i === 0 ? "block" : "none");
 </script>
     
 </body>
