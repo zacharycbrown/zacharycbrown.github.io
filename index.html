@@ -161,21 +161,36 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 </script>
 
-<!-- JavaScript for image carousel -->
+<!-- Carousel JavaScript -->
 <script>
-    let index = 0;
-    const images = document.querySelectorAll(".carousel-image");
+  // Select all carousel images
+  const slides = document.querySelectorAll('.carousel-image');
+  let slideIndex = 0;
 
-    function showNextImage() {
-        images[index].style.display = "none";
-        index = (index + 1) % images.length;
-        images[index].style.display = "block";
-    }
+  // Function to change slides
+  function changeSlide(direction) {
+    // Hide current slide
+    slides[slideIndex].classList.remove('active');
+    slides[slideIndex].style.display = 'none';
+    
+    // Calculate new index
+    slideIndex = (slideIndex + direction + slides.length) % slides.length;
+    
+    // Show new slide
+    slides[slideIndex].classList.add('active');
+    slides[slideIndex].style.display = 'block';
+  }
 
-    setInterval(showNextImage, 3000); // Change image every 3 seconds
+  // Make changeSlide available globally so the onclick handlers can call it
+  window.changeSlide = changeSlide;
 
-    // Initialize: Hide all images except the first one
-    images.forEach((img, i) => img.style.display = i === 0 ? "block" : "none");
+  // Auto-rotate every 5 seconds
+  setInterval(() => changeSlide(1), 5000);
+
+  // Initialize carousel: hide all images except the first
+  slides.forEach((img, i) => {
+    img.style.display = (i === 0) ? 'block' : 'none';
+  });
 </script>
     
 </body>
