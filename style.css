@@ -9,8 +9,8 @@ body {
 
 /* Header Section */
 header {
-    background: linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.3)), url('images/dall_e_techno_gradient.webp') center/cover no-repeat;/*linear-gradient(to right, #1a1a1a, #333);*/
-    color: white;
+    background: url('images/dall_e_techno_gradient.webp') center/cover no-repeat;/*linear-gradient(to right, #1a1a1a, #333);*/
+    color: black;
     text-align: center;
     padding: 60px 20px;
     font-size: 1.5em;
