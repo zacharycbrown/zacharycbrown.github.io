@@ -60,7 +60,7 @@
         <div class="publication">
             <p><strong>Zachary Brown</strong>, Nathaniel Robinson, David Wingate and Nancy Fulda. "Towards Neural Programming Interfaces." <em>Advances in Neural Information Processing Systems</em>, December 2020. 
                 <a href="https://proceedings.neurips.cc/paper/2020/file/c9f06bc7b46d0247a91c8fc665c13d0e-Paper.pdf">[Full Paper]</a> 
-                <a href="#bibtexA" onclick="toggleBibtex('bibtexA')">[BibTeX]</a>
+                <a href="#" onclick="toggleBibtex('bibtexA'); return false;">[BibTeX]</a>
             </p>
             <pre id="bibtexA" class="bibtex" style="display:none;">
 @inproceedings{NEURIPS2020_c9f06bc7,
@@ -80,7 +80,7 @@
         <div class="publication">
             <p>Nathaniel Robinson, <strong>Zachary Brown</strong>, Timothy Sitze, and Nancy Fulda. "Text Classifications Learned from Language Model Hidden Layers." <em>Proceedings of the IEEE 19th World Symposium on Applied Machine Intelligence and Informatics</em>, January 2021. 
                 <a href="https://dragn.ai/wp-content/uploads/2021/01/sami2021_46_Nathaniel-Robinson.pdf">[Full Paper]</a> 
-                <a href="#bibtex1" onclick="toggleBibtex('bibtex1')">[BibTeX]</a>
+                <a href="#" onclick="toggleBibtex('bibtex1'); return false;">[BibTeX]</a>
             </p>
             <pre id="bibtex1" class="bibtex" style="display:none;">
 @inproceedings{robinson2021text,
@@ -95,7 +95,7 @@
         <div class="publication">
             <p>Nancy Fulda, Tyler Etchart, William Myers, Daniel Ricks, <strong>Zachary Brown</strong>, Joseph Szendre, Ben Murdoch, Andrew Carr and David Wingate. "BYU-EVE: Mixed Initiative Dialog via Structured Knowledge Graph Traversal and Conversational Scaffolding." <em>Amazon Alexa Prize Proceedings</em>, November 2018. 
                 <a href="https://s3.amazonaws.com/dex-microsites-prod/alexaprize/2018/papers/Eve.pdf">[Full Paper]</a> 
-                <a href="#bibtex2" onclick="toggleBibtex('bibtex2')">[BibTeX]</a>
+                <a href="#" onclick="toggleBibtex('bibtex2'); return false;">[BibTeX]</a>
             </p>
             <pre id="bibtex2" class="bibtex" style="display:none;">
 @article{fulda2018byu,
@@ -110,7 +110,7 @@
         <div class="publication">
             <p>Nancy Fulda, Nathan Tibbets, <strong>Zachary Brown</strong>, and David Wingate. "Harvesting Common-Sense Navigational Knowledge for Robotics from Uncurated Text Corpora." <em>1st Annual Conference on Robot Learning (CoRL)</em>, 2017. 
                 <a href="https://pcc4318.files.wordpress.com/2017/05/corl-2017-harvesting-common-sense-navigational-knowledge-for-robotics-from-uncurated-text-corpora.pdf">[Full Paper]</a> 
-                <a href="#bibtex3" onclick="toggleBibtex('bibtex3')">[BibTeX]</a>
+                <a href="#" onclick="toggleBibtex('bibtex3'); return false;">[BibTeX]</a>
             </p>
             <pre id="bibtex3" class="bibtex" style="display:none;">
 @inproceedings{fulda2017harvesting,
@@ -191,6 +191,18 @@ document.addEventListener("DOMContentLoaded", function() {
   slides.forEach((img, i) => {
     img.style.display = (i === 0) ? 'block' : 'none';
   });
+</script>
+
+<script>
+function toggleBibtex(id) {
+    var bibtex = document.getElementById(id);
+    // Toggle display between 'none' and 'block'
+    if (bibtex.style.display === "none" || bibtex.style.display === "") {
+        bibtex.style.display = "block";
+    } else {
+        bibtex.style.display = "none";
+    }
+}
 </script>
     
 </body>
