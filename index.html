@@ -194,15 +194,16 @@ document.addEventListener("DOMContentLoaded", function() {
 </script>
 
 <script>
-function toggleBibtex(id) {
+  function toggleBibtex(id) {
     var bibtex = document.getElementById(id);
-    // Toggle display between 'none' and 'block'
     if (bibtex.style.display === "none" || bibtex.style.display === "") {
-        bibtex.style.display = "block";
+      bibtex.style.display = "block";
     } else {
-        bibtex.style.display = "none";
+      bibtex.style.display = "none";
     }
-}
+  }
+  // Attach to global scope
+  window.toggleBibtex = toggleBibtex;
 </script>
     
 </body>
