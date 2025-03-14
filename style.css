@@ -105,6 +105,10 @@ nav ul li a:hover {
     background: rgba(0, 0, 0, 0.8);
 }
 
+.bibtex {
+  display: none;
+}
+
 /* Add padding to prevent content from being hidden under navbar */
 body {
     padding-top: 60px;
