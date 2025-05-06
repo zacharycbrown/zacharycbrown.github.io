@@ -12,7 +12,7 @@ body {
 header {
     background: url('images/file_00000000bffc622f8d1d3649964b51d2.png') center/cover no-repeat; 
     /*background: url('images/dall_e_techno_gradient.webp') center/cover no-repeat;*/   /*linear-gradient(to right, #1a1a1a, #333);*/
-    color: white;/*black;*/
+    color: black;
     text-align: center;
     padding: 60px 20px;
     font-size: 1.5em;
