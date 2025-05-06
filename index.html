@@ -178,33 +178,40 @@ document.addEventListener("DOMContentLoaded", function() {
 
 <!-- Carousel JavaScript -->
 <script>
-  // Select all carousel images
   const slides = document.querySelectorAll('.carousel-image');
   let slideIndex = 0;
+  let isTransitioning = false;
 
-  // Function to change slides
   function changeSlide(direction) {
-    // Hide current slide
-    slides[slideIndex].classList.remove('active');
-    slides[slideIndex].style.display = 'none';
-    
-    // Calculate new index
-    slideIndex = (slideIndex + direction + slides.length) % slides.length;
-    
-    // Show new slide
-    slides[slideIndex].classList.add('active');
-    slides[slideIndex].style.display = 'block';
+    if (isTransitioning) return;
+    isTransitioning = true;
+
+    const currentSlide = slides[slideIndex];
+    currentSlide.classList.remove('active');
+
+    // Fade out
+    setTimeout(() => {
+      currentSlide.style.display = 'none';
+      // Calculate new index
+      slideIndex = (slideIndex + direction + slides.length) % slides.length;
+      const nextSlide = slides[slideIndex];
+      nextSlide.style.display = 'block';
+      // Trigger reflow to restart transition
+      void nextSlide.offsetWidth;
+      nextSlide.classList.add('active');
+      // Allow transitions to complete before next interaction
+      setTimeout(() => {
+        isTransitioning = false;
+      }, 500); // Match the CSS transition duration
+    }, 500); // Fade-out time
   }
 
-  // Make changeSlide available globally so the onclick handlers can call it
   window.changeSlide = changeSlide;
-
-  // Auto-rotate every 5 seconds
   setInterval(() => changeSlide(1), 5000);
 
-  // Initialize carousel: hide all images except the first
   slides.forEach((img, i) => {
     img.style.display = (i === 0) ? 'block' : 'none';
+    if (i === 0) img.classList.add('active');
   });
 </script>
 
