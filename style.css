@@ -19,8 +19,8 @@ body {
 
 .profile-photo {
   flex-shrink: 0;                   /* prevent image from shrinking */
-  width: 100px;                     /* desired photo size */
-  height: 100px;
+  width: 200px;                     /* desired photo size */
+  height: 200px;
   border-radius: 50%;               /* make it circular */ :contentReference[oaicite:1]{index=1}
   object-fit: cover;                /* crop/scale to fill */  
 }
