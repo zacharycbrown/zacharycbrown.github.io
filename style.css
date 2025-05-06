@@ -8,15 +8,46 @@ body {
     background: url('images/file_00000000bffc622f8d1d3649964b51d2.png') center/cover no-repeat; 
 }
 
-/* Header Section */
-header {
+/*-- Header Section --*/
+.site-header {
+  display: flex;                    /* turn header into flex container */ 
+  align-items: center;              /* vertically center items */ :contentReference[oaicite:0]{index=0}
+  gap: 1.5rem;                      /* space between photo and text */
+  padding: 1rem;
+  background: url('images/file_00000000bffc622f8d1d3649964b51d2.png') center/cover no-repeat; /*background-color: #222;           /* adjust as needed */
+}
+
+.profile-photo {
+  flex-shrink: 0;                   /* prevent image from shrinking */
+  width: 100px;                     /* desired photo size */
+  height: 100px;
+  border-radius: 50%;               /* make it circular */ :contentReference[oaicite:1]{index=1}
+  object-fit: cover;                /* crop/scale to fill */  
+}
+
+.header-text h1,
+.header-text p {
+  margin: 0;
+  color: white;
+}
+
+/* Optional: adjust typography */
+.header-text h1 {
+  font-size: 1.75rem;
+  line-height: 1.2;
+}
+
+.header-text p {
+  font-size: 1rem;
+  opacity: 0.85;
+}
+/*header {
     background: url('images/file_00000000bffc622f8d1d3649964b51d2.png') center/cover no-repeat; 
-    /*background: url('images/dall_e_techno_gradient.webp') center/cover no-repeat;*/   /*linear-gradient(to right, #1a1a1a, #333);*/
     color: black;
     text-align: center;
     padding: 60px 20px;
     font-size: 1.5em;
-}
+}*/
 
 /* Navigation Bar */
 nav {
