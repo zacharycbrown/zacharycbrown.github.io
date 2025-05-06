@@ -81,12 +81,19 @@ nav ul li a:hover {
 }
 
 .carousel-image {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    position: absolute; /* Ensures slides stack */
+    top: 0;
+    left: 0;
     width: 100%;
     display: none;
 }
 
 .carousel-image.active {
+    opacity: 1;
     display: block;
+    z-index: 1;
 }
 
 .prev, .next {
