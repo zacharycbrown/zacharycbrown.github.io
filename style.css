@@ -83,7 +83,7 @@ nav ul li a:hover {
 .carousel-image {
     opacity: 0;
     transition: opacity 0.5s ease;
-    position: absolute; /* Ensures slides stack */
+    /*position: absolute; /* Ensures slides stack */
     top: 0;
     left: 0;
     width: 100%;
