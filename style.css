@@ -68,14 +68,13 @@ nav {
     padding: 10px 0;
 }
 nav ul {
-    list-style: none;
-    text-align: center;
-    padding: 0;
-    margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;    /* space between items */
 }
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+  margin: 0;    /* handled by gap */
 }
 nav ul li a {
     color: white;
