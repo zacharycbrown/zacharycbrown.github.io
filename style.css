@@ -179,7 +179,7 @@ nav ul li a:hover {
 .carousel {
     position: relative;
     width: min(100vw, 800px);
-    height: min(75vh, 450px);
+    aspect-ratio: 16 / 9;     /* lets height auto-scale */
     margin: 0 auto;
     overflow: hidden;
     /*border-radius: 10px;*/
@@ -197,6 +197,8 @@ nav ul li a:hover {
     opacity: 0;
     transition: opacity 0.5s ease;
     z-index: 0;        /* all start behind */
+    max-width: none;      /* disable any inherited max-width */
+    max-height: none;     /* disable any inherited max-height */
 }
 
 .carousel-image.active {
