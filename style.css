@@ -50,6 +50,15 @@ body {
 }*/
 
 /* Navigation Bar */
+@media only screen and (max-width: 600px) {
+  nav ul {
+    padding: 0;
+  }
+  nav ul li {
+    display: block;
+    margin: 8px 0;
+  }
+}
 nav {
     position: fixed;
     width: 100%;
