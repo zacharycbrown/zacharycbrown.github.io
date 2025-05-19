@@ -231,6 +231,16 @@ document.addEventListener("DOMContentLoaded", function() {
   // Attach to global scope
   window.toggleBibtex = toggleBibtex;
 </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const toggleBtn = document.getElementById('nav-toggle');
+        const siteNav   = document.getElementById('site-nav');
+        toggleBtn.addEventListener('click', () => {
+            siteNav.classList.toggle('show');
+        });
+    });
+</script>
     
 </body>
 </html>
