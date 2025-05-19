@@ -78,21 +78,55 @@ nav ul li a:hover {
 }
 
 /* Mobile: stack vertically and hide full nav behind button */
-#site-nav { display: none; }
 #nav-toggle {
-  display: block;
+  position: fixed;
+  top: 15px; right: 15px;
+  z-index: 1001;
   background: none;
-  color: white;
   border: none;
   font-size: 1.5rem;
-  padding: 0 15px;
+  color: white;
+}
+/* Collapsible Nav */
+#site-nav {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  background: rgba(51,51,51,0.9);
+  z-index: 1000;
+  padding: 10px 0;
 }
 #site-nav.show { display: block; }
-
-@media only screen and (min-width: 600px) {
-  #site-nav { display: block !important; }
-  #nav-toggle { display: none; }
+/* Nav links (you can flex or stack here) */
+#site-nav ul {
+  list-style: none;
+  margin: 0; padding: 0;
+  text-align: center;
 }
+#site-nav ul li {
+  margin: 8px 0;
+}
+#site-nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Desktop fallback */
+@media (min-width: 600px) {
+  #nav-toggle { display: none; }
+  #site-nav {
+    display: block !important;
+    position: fixed;
+  }
+  #site-nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  #site-nav ul li { margin: 0; }
+}
+
 
 /* Section Styles */
 .section {
