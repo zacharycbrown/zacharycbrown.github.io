@@ -5,6 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name - Homepage</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .button-link {
+            display: inline-block;
+            padding: 0.5em 1em;
+            background-color: #336699;
+            color: white;
+            text-decoration: none;
+            border: 2px solid transparent;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.2s ease, border-color 0.2s ease;
+        }
+        .button-link:hover,
+        .button-link:focus {
+            background-color: #28527a;
+            border-color: #fff;
+        }
+        .button-link.block {
+            display: block;
+            width: 100%;
+            text-align: center;
+            box-sizing: border-box;
+        }
+    </style>
 </head>
 <body>
     <header class="site-header">
@@ -28,7 +53,7 @@
         
     <section id="featured" class="section">
         <h2>Featured Items</h2>
-        <p>My Curriculum Vitae (CV): <a href="files/zachary_brown_cv_may2025.pdf">Download</a></p>
+        <p><a href="files/zachary_brown_cv_may2025.pdf" class="button-link">My Curriculum Vitae (CV)</a></p>
     </section>
     
     <section id="about" class="section">
