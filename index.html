@@ -239,6 +239,11 @@ document.addEventListener("DOMContentLoaded", function() {
         toggleBtn.addEventListener('click', () => {
             siteNav.classList.toggle('show');
         });
+        siteNav.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                siteNav.classList.remove('show');
+            });
+        });
     });
 </script>
     
