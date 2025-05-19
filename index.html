@@ -236,13 +236,23 @@ document.addEventListener("DOMContentLoaded", function() {
     document.addEventListener('DOMContentLoaded', () => {
         const toggleBtn = document.getElementById('nav-toggle');
         const siteNav   = document.getElementById('site-nav');
+        // 1. Toggle menu on button click 
         toggleBtn.addEventListener('click', () => {
             siteNav.classList.toggle('show');
         });
+        // 2. Collapse on link click
         siteNav.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
                 siteNav.classList.remove('show');
             });
+        });
+        // 3. Collapse when clicking outside nav or button
+        document.addEventListener('click', (event) => {
+            const clickedInsideNav    = siteNav.contains(event.target);
+            const clickedToggleButton = toggleBtn.contains(event.target);
+            if (!clickedInsideNav && !clickedToggleButton) {
+                siteNav.classList.remove('show');
+            }
         });
     });
 </script>
