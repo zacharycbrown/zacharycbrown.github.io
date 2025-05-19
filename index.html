@@ -29,6 +29,29 @@
             text-align: center;
             box-sizing: border-box;
         }
+        .small-button-link {
+            display: inline-block;
+            padding: 0.1em 0.1em;
+            background-color: #336699;
+            color: white;
+            text-decoration: none;
+            border: 1px solid transparent;
+            border-radius: 2px;
+            font-size: 0.5rem;
+            cursor: pointer;
+            transition: background-color 0.2s ease, border-color 0.2s ease;
+        }
+        .small-button-link:hover,
+        .small-button-link:focus {
+            background-color: #28527a;
+            border-color: #fff;
+        }
+        .small-button-link.block {
+            display: block;
+            width: 100%;
+            text-align: center;
+            box-sizing: border-box;
+        }
     </style>
 </head>
 <body>
@@ -95,15 +118,15 @@
         
         <div class="publication">
             <p><strong>Zachary Brown</strong> and David Carlson. "Generating Hypotheses of Dynamic Causal Graphs in Neuroscience: Leveraging Generative Factor Models of Observed Time Series." <em>International Conference on Machine Learning</em>, July 2025. 
-                <a href="" class="button-link">[Full Paper - Available Soon]</a> <!--  <a href="https://proceedings.neurips.cc/paper/2020/file/c9f06bc7b46d0247a91c8fc665c13d0e-Paper.pdf">[Full Paper]</a>  -->
-                <a href="" class="button-link">[Bibtex - Available Soon]</a> <!--  <a href="#" onclick="toggleBibtex('bibtexA'); return false;">[BibTeX]</a>  -->
+                <a href="" class="small-button-link">Full Paper - Available Soon</a> <!--  <a href="https://proceedings.neurips.cc/paper/2020/file/c9f06bc7b46d0247a91c8fc665c13d0e-Paper.pdf">[Full Paper]</a>  -->
+                <a href="" class="small-button-link">Bibtex - Available Soon</a> <!--  <a href="#" onclick="toggleBibtex('bibtexA'); return false;">[BibTeX]</a>  -->
             </p>
         </div>
         
         <div class="publication">
             <p><strong>Zachary Brown</strong>, Nathaniel Robinson, David Wingate and Nancy Fulda. "Towards Neural Programming Interfaces." <em>Advances in Neural Information Processing Systems</em>, December 2020. 
-                <a href="https://proceedings.neurips.cc/paper/2020/file/c9f06bc7b46d0247a91c8fc665c13d0e-Paper.pdf" class="button-link">Full Paper</a> 
-                <a href="#" onclick="toggleBibtex('bibtexA'); return false;" class="button-link">BibTeX</a>
+                <a href="https://proceedings.neurips.cc/paper/2020/file/c9f06bc7b46d0247a91c8fc665c13d0e-Paper.pdf" class="small-button-link">Full Paper</a> 
+                <a href="#" onclick="toggleBibtex('bibtexA'); return false;" class="small-button-link">BibTeX</a>
             </p>
             <pre id="bibtexA" class="bibtex" style="display:none;">
 @inproceedings{NEURIPS2020_c9f06bc7,
@@ -122,8 +145,8 @@
         
         <div class="publication">
             <p>Nathaniel Robinson, <strong>Zachary Brown</strong>, Timothy Sitze, and Nancy Fulda. "Text Classifications Learned from Language Model Hidden Layers." <em>Proceedings of the IEEE 19th World Symposium on Applied Machine Intelligence and Informatics</em>, January 2021. 
-                <a href="https://dragn.ai/wp-content/uploads/2021/01/sami2021_46_Nathaniel-Robinson.pdf" class="button-link">Full Paper</a> 
-                <a href="#" onclick="toggleBibtex('bibtex1'); return false;" class="button-link">BibTeX</a>
+                <a href="https://dragn.ai/wp-content/uploads/2021/01/sami2021_46_Nathaniel-Robinson.pdf" class="small-button-link">Full Paper</a> 
+                <a href="#" onclick="toggleBibtex('bibtex1'); return false;" class="small-button-link">BibTeX</a>
             </p>
             <pre id="bibtex1" class="bibtex" style="display:none;">
 @inproceedings{robinson2021text,
@@ -137,8 +160,8 @@
         
         <div class="publication">
             <p>Nancy Fulda, Tyler Etchart, William Myers, Daniel Ricks, <strong>Zachary Brown</strong>, Joseph Szendre, Ben Murdoch, Andrew Carr and David Wingate. "BYU-EVE: Mixed Initiative Dialog via Structured Knowledge Graph Traversal and Conversational Scaffolding." <em>Amazon Alexa Prize Proceedings</em>, November 2018. 
-                <a href="https://s3.amazonaws.com/dex-microsites-prod/alexaprize/2018/papers/Eve.pdf" class="button-link">Full Paper</a> 
-                <a href="#" onclick="toggleBibtex('bibtex2'); return false;" class="button-link">BibTeX</a>
+                <a href="https://s3.amazonaws.com/dex-microsites-prod/alexaprize/2018/papers/Eve.pdf" class="small-button-link">Full Paper</a> 
+                <a href="#" onclick="toggleBibtex('bibtex2'); return false;" class="small-button-link">BibTeX</a>
             </p>
             <pre id="bibtex2" class="bibtex" style="display:none;">
 @article{fulda2018byu,
@@ -152,8 +175,8 @@
         
         <div class="publication">
             <p>Nancy Fulda, Nathan Tibbets, <strong>Zachary Brown</strong>, and David Wingate. "Harvesting Common-Sense Navigational Knowledge for Robotics from Uncurated Text Corpora." <em>1st Annual Conference on Robot Learning (CoRL)</em>, 2017. 
-                <a href="https://pcc4318.files.wordpress.com/2017/05/corl-2017-harvesting-common-sense-navigational-knowledge-for-robotics-from-uncurated-text-corpora.pdf" class="button-link">Full Paper</a> 
-                <a href="#" onclick="toggleBibtex('bibtex3'); return false;" class="button-link">BibTeX</a>
+                <a href="https://pcc4318.files.wordpress.com/2017/05/corl-2017-harvesting-common-sense-navigational-knowledge-for-robotics-from-uncurated-text-corpora.pdf" class="small-button-link">Full Paper</a> 
+                <a href="#" onclick="toggleBibtex('bibtex3'); return false;" class="small-button-link">BibTeX</a>
             </p>
             <pre id="bibtex3" class="bibtex" style="display:none;">
 @inproceedings{fulda2017harvesting,
