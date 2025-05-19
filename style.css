@@ -78,38 +78,60 @@ nav ul li a:hover {
 }
 
 /* Mobile: stack vertically and hide full nav behind button */
+/* 1) Toggle button: always fixed in top-right */
 #nav-toggle {
-  position: fixed;
-  top: 15px; right: 15px;
-  z-index: 1001;
+  position: fixed;      /* pin to viewport */
+  top: 15px;            /* adjust as desired */
+  right: 15px;          /* adjust as desired */
+  z-index: 1001;        /* sit above the nav (1000) */
   background: none;
   border: none;
   font-size: 1.5rem;
   color: white;
+  cursor: pointer;
 }
-/* Collapsible Nav */
+/* 2) Collapsed nav container: overlay + hidden by default */
 #site-nav {
-  display: none;
-  position: fixed;
-  top: 0; left: 0;
+  display: none;        /* hide until toggled */
+  position: fixed;      /* overlay content */
+  top: 0;
+  left: 0;
   width: 100%;
   background: rgba(51,51,51,0.9);
-  z-index: 1000;
+  z-index: 1000;        /* below the toggle */
   padding: 10px 0;
 }
-#site-nav.show { display: block; }
-/* Nav links (you can flex or stack here) */
+/* 3) When “.show” is added via JS: reveal it */
+#site-nav.show {
+  display: block;
+}
+/* 4) Vertical dropdown: stack links */
 #site-nav ul {
   list-style: none;
-  margin: 0; padding: 0;
-  text-align: center;
+  margin: 0;
+  padding: 0;
+  /* Two options: */
+  /* Option A: Flex-column */
+  display: flex;
+  flex-direction: column;  /* stack top→bottom */
+  align-items: center;     /* center links */
+  gap: 12px;               /* space between items */
+
+  /* Option B (alternative): block items */
+  /* display: block; */
 }
 #site-nav ul li {
-  margin: 8px 0;
+  /* if using Option B above */
+  /* display: block;
+     margin: 8px 0; */
 }
 #site-nav ul li a {
   color: white;
   text-decoration: none;
+  font-size: 1.1rem;
+}
+#site-nav ul li a:hover {
+  color: #ffcc00;
 }
 
 /* Desktop fallback */
