@@ -50,40 +50,48 @@ body {
 }*/
 
 /* Navigation Bar */
-@media only screen and (max-width: 600px) {
-  nav ul {
-    padding: 0;
-  }
-  nav ul li {
-    display: block;
-    margin: 8px 0;
-  }
-}
-nav {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    background: rgba(51, 51, 51, 0.9);
-    z-index: 1000;
-    padding: 10px 0;
+nav, #nav-toggle {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(51,51,51,0.9);
+  z-index: 1000;
+  padding: 10px 0;
 }
 nav ul {
+  list-style: none;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 10px;    /* space between items */
-}
-nav ul li {
-  margin: 0;    /* handled by gap */
+  gap: 15px;
+  margin: 0;
+  padding: 0;
 }
 nav ul li a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 nav ul li a:hover {
-    color: #ffcc00;
-    text-decoration: underline;
+  color: #ffcc00;
+  text-decoration: underline;
+}
+
+/* Mobile: stack vertically and hide full nav behind button */
+#site-nav { display: none; }
+#nav-toggle {
+  display: block;
+  background: none;
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  padding: 0 15px;
+}
+#site-nav.show { display: block; }
+
+@media only screen and (min-width: 600px) {
+  #site-nav { display: block !important; }
+  #nav-toggle { display: none; }
 }
 
 /* Section Styles */
